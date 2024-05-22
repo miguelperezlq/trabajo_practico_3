@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container logo-nav-conteiner">
+          <a href="#" class="logo">Programacion Visual</a>
+          <nav class="navigation">
+            <ul>
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="form-cliente.html">FORMULARIO</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+      <section>
+        <h2>Registro</h2>
+        <form action="/">
+            <fieldset>
+                <legend>Complete los Datos</legend>
+                <label>DNI
+                    <input type="text" name="dni" placeholder="Introduzca su DNI" pattern="[0-9]{8}" title="Debe poner 8 números" minlength="8" maxlength="8"  required>
+                </label>
+                <label>Nombre
+                    <input type="text" name="nombre" placeholder="Juan" required>
+                </label>
+                <label>Apellido
+                    <input type="text" name="apellido" placeholder="Perez" required>
+                </label>
+                <label>Fecha de nacimiento
+                    <input type="date" name="fechaNacimiento" required>
+                </label>
+                <fieldset>
+                    <legend>Seleccione Genero</legend>
+                    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+                <label>Correo Electronico
+                    <input type="email" name="email" placeholder="name@gmail.com" required>
+                </label>
+                <label>Domicilio
+                    <input type="text" name="domicilio" placeholder="España 234" required>
+                </label>
+                <label for="seleccionProvincia">Elige una provincia</label>
+                <select name="provincia" id="seleccionProvincia">
+                    <option value="">--Seleccione una opcion --</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="salta">Salta</option>
+                    <option value="tucuman">Tucuman</option>
+                    <option value="Corrientes">Corrientes</option>
+                </select>
+                <label>Numero de Celular
+                    <input name="celular" type="text" placeholder="Introduzca su numero de celular" pattern="[0-9]{10}" title="Debe poner 10 números" minlength="10" maxlength="10"  required>
+                </label>
+                <fieldset>
+                    <legend>Seleccione Categoria de Interes</legend>
+                    <input type="checkbox" id="java" name="java" checked />
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="html" name="java"/>
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="java"/>
+                    <label for="css">CSS</label>
+                </fieldset>
+                <label for="sugerencias">Sugerencias:</label>
+                <textarea id="sugerencias" name="sugerencia" rows="5" cols="33"></textarea>
+                <label for="pass">Password (minimo 8 caracteres):</label>
+                <input type="password" id="pass" name="password" minlength="8" required />
+
+                <div>
+                    <input type="checkbox" id="termninoCondiciones" name="condiciones" checked />
+                    <label for="termninoCondiciones">Acepto los términos y condiciones</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="recibirInformacion" name="informacion" />
+                    <label for="recibirInformacion">Acepto recibir información relativa a la empresa</label>
+                </div>
+
+            </fieldset>
+            <button>Enviar Registro</button>
+        </form>
+      </section>
+      <footer>
+        <p class="contacto">Contacto: miguel.mp313@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
